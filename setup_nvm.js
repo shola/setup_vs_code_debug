@@ -22,7 +22,8 @@ function getRecentNodeVersion() {
 }
 
 function createVsCodeConfig(version) {
-    const launchFilePath = '.vscode/launch.json';
+    const vscodeDir = '.vscode';
+    const launchFilePath = [vscodeDir, 'launch.json'].join('/');
     const getNodePath = `
     source ~/.nvm/nvm.sh > /dev/null
     echo ${version} > .nvmrc
@@ -49,7 +50,9 @@ function createVsCodeConfig(version) {
                 }
             ]
         }`;
-
+        if (!fs.existsSync(vscodeDir)) {
+            fs.mkdirSync('.vscode')
+        }
         fs.writeFile(launchFilePath, launchFileTemplate, err => {
             if (err) {
                 console.error(err);
