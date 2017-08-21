@@ -1,0 +1,11 @@
+{
+  "name": "setup_vs_code_debug",
+  "version": "1.0.0",
+  "description": "Easily get VS code debugging setup for NodeJS projects.",
+  "main": "setup_nvm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Situ",
+  "license": "ISC"
+}
