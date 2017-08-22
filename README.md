@@ -4,6 +4,7 @@ for NodeJS development, and the built in debugger is awesome. *Except* that it
 fails to start if you are using the latest versions of NodeJS... if you want to 
 use new features like [async/await](http://node.green/#ES2017-features-async-functions), you will like this tool!
 
+![Debugging in Visual Studio Code](https://code.visualstudio.com/images/javascript_debug_data_inspection.gif)
 ### Prerequisites
 
 - [Install NVM (Node Version Manager)](https://github.com/creationix/nvm)
