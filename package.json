@@ -1,6 +1,6 @@
 {
   "name": "setup_vs_code_debug",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Easily get VS code debugging setup for NodeJS projects.",
   "main": "setup_nvm.js",
   "keywords": [
