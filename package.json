@@ -7,9 +7,17 @@
     "vscode",
     "vs code",
     "visual studio",
+    "runtimeExecutable",
+    "debug-brk",
     "debug",
+    "debugger",
+    "inspect-brk",
     "inspect",
-    "runtimeExecutable"
+    "inspector",
+    "5858",
+    "launch",
+    "attach",
+    "launch.json"
   ],
   "homepage": "https://github.com/shola/setup_vs_code_debug",
   "repository": {
