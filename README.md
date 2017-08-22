@@ -49,7 +49,7 @@ Your VS Code Debugger config will be saved in `.vscode/launch.json`.
 You can safely remove `setup_vs_code_debug` at any time, and your VS code configs will 
 still be saved.
 ```
-npm uninstall setup_vs_code_debug
+npm uninstall -g setup_vs_code_debug
 ```
 ## Todos
 - add unit tests
