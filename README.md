@@ -18,13 +18,13 @@ npm i -g setup_vs_code_debug
 Run these commands in your terminal:
 ```
 cd <YOUR_PROJECT_DIR>
-node setup_vs_code_debug
+setup_vs_code_debug
 ```
 The above command will configure the second-most-recent version of NodeJS to work
 with VS Code's debugger (because the latest version may be unstable). If you would 
 like to target a different version of NodeJS:
 ```
-node setup_vs_code_debug X.X.X
+setup_vs_code_debug X.X.X
 ```
 To start debugging, open any of your project JS files in VS Code and hit 
 `CMD + F5` on a mac (try `F5` or `CTRL + F5` on other systems).
