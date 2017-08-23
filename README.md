@@ -11,7 +11,6 @@ use new features like [async/await](http://node.green/#ES2017-features-async-fun
 - [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
 
 ### Installing
-
 ```
 npm i -g setup_vs_code_debug
 ```
@@ -21,9 +20,8 @@ Run these commands in your terminal:
 cd <YOUR_PROJECT_DIR>
 setup_vs_code_debug
 ```
-The above command will configure the second-most-recent version of NodeJS to work
-with VS Code's debugger (because the latest version may be unstable). If you would 
-like to target a different version of NodeJS:
+The above command will configure the the most version of NodeJS to work with VS Code's 
+debugger. If you would like to target a different version of NodeJS:
 ```
 setup_vs_code_debug X.X.X
 ```
@@ -54,7 +52,6 @@ npm uninstall -g setup_vs_code_debug
 ```
 ## Todos
 - add unit tests
-- add jsdocs
 
 ## Author
 * **Mike Situ** - [Github Repos](https://github.com/shola)
