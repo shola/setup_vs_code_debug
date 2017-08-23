@@ -91,7 +91,7 @@ function createVsCodeConfig(version) {
                 if (err) {
                     reject(err.message);
                 } else {
-                    resolve(`VS Code can now debug with this project with nodeJS "${version}"`);
+                    resolve(`VS Code can now debug this project with nodeJS version "${version}"`);
                 }
             });
         });
