@@ -26,7 +26,7 @@ debugger. If you would like to target a different version of NodeJS:
 setup_vs_code_debug X.X.X
 ```
 To start debugging, open any of your project JS files in VS Code and hit 
-`CMD + F5` on a mac (try `F5` or `CTRL + F5` on other systems).
+`FN + F5` on a mac (try `F5` or `WIN + F5` on other systems).
 
 [How To Debug NodeJS in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
 ## Under The Hood

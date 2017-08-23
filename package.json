@@ -1,8 +1,11 @@
 {
   "name": "setup_vs_code_debug",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "Easily get VS code debugging setup for NodeJS projects.",
   "bin": "setup_nvm.js",
+  "scripts": {
+    "test": "nodeunit test_setup_nvm.js"
+  },
   "keywords": [
     "vscode",
     "vs code",
@@ -29,5 +32,8 @@
     "email": "michael.o.situ@gmail.com",
     "url": "https://github.com/shola"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodeunit": "^0.11.1"
+  }
 }
