@@ -1,7 +1,7 @@
 {
   "name": "setup_vs_code_debug",
   "version": "1.0.0",
-  "description": "Easily get VS code debugging setup for NodeJS projects.",
+  "description": "Easily get Visual Studio Code debugging setup for Node projects.",
   "bin": "setup_nvm.js",
   "scripts": {
     "test": "nodeunit test_setup_nvm.js"
@@ -10,6 +10,7 @@
     "vscode",
     "vs code",
     "visual studio",
+    "vs code node",
     "runtimeExecutable",
     "debug-brk",
     "debug",
