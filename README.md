@@ -1,16 +1,15 @@
-# setup_vs_code_debug
+# Setup Visual Studio Code Node Debugging
 [Microsoft Visual Studio Code](https://code.visualstudio.com/) is a great editor
 for NodeJS development, and the built in debugger is awesome. *Except* that it
 fails to start if you are using the latest versions of NodeJS... if you want to 
 use new features like [async/await](http://node.green/#ES2017-features-async-functions), you will like this tool!
 
 ![Debugging in Visual Studio Code](https://code.visualstudio.com/images/javascript_debug_data_inspection.gif)
+## Installing
 ### Prerequisites
 
 - [Install NVM (Node Version Manager)](https://github.com/creationix/nvm)
 - [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
-
-### Installing
 ```
 npm i -g setup_vs_code_debug
 ```
@@ -27,6 +26,8 @@ setup_vs_code_debug X.X.X
 ```
 To start debugging, open any of your project JS files in VS Code and hit 
 `FN + F5` on a mac (try `F5` or `WIN + F5` on other systems).
+
+You can always overwrite the version of Node to debug against by running the command again.
 
 [How To Debug NodeJS in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
 ## Under The Hood

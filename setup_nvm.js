@@ -1,5 +1,9 @@
 #!/usr/bin/env node
-const { parseVersion, getRecentNodeVersion, createVsCodeConfig } = require('./config_factory');
+const {
+    parseVersion,
+    getRecentNodeVersion,
+    createVsCodeConfig
+} = require('./config_factory');
 const customVersion = process.argv[2] || ''; // allows users to enter a specific node version
 
 getRecentNodeVersion(customVersion)

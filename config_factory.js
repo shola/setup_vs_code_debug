@@ -63,27 +63,15 @@ function createVsCodeConfig(version) {
     const vscodeDir = '.vscode';
     const launchFilePath = [vscodeDir, 'launch.json'].join('/');
     const getNodePath = `source ~/.nvm/nvm.sh\
-    \necho ${version} > .nvmrc\
-    \nnvm use > /dev/null\
-    \nnvm which ${version}`;
+  \necho ${version} > .nvmrc\
+  \nnvm use > /dev/null\
+  \nnvm which ${version}`;
     const configPromise = new Promise((resolve, reject) => {
         exec(getNodePath, function(err, localNodePath, stderr) {
             if (err) {
                 reject(err.message);
             }
-            const launchFileTemplate = `{
-                "version": "0.2.0",
-                "configurations": [
-                    {
-                        "type": "node",
-                        "request": "launch",
-                        "name": "Lanuch to Process",
-                        "program": "\$\{file\}",
-                        "protocol": "auto",
-                        "runtimeExecutable": "${localNodePath.trim()}"
-                    }
-                ]
-            }`;
+            const launchFileTemplate = createLaunchJsonTemplate(localNodePath.trim());
             if (!fs.existsSync(vscodeDir)) {
                 fs.mkdirSync('.vscode');
             }
@@ -97,6 +85,24 @@ function createVsCodeConfig(version) {
         });
     });
     return configPromise;
+}
+
+function createLaunchJsonTemplate(nodePath) {
+    const launchFileTemplate = `\
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Lanuch to Process",
+      "program": "\$\{file\}",
+      "protocol": "auto",
+      "runtimeExecutable": "${nodePath}"
+    }
+  ]
+}`;
+    return launchFileTemplate;
 }
 
 module.exports = {

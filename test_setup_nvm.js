@@ -1,5 +1,9 @@
 const nodeunit = require('nodeunit');
-const { parseVersion, getRecentNodeVersion, createVsCodeConfig } = require('./config_factory');
+const {
+    parseVersion,
+    getRecentNodeVersion,
+    createVsCodeConfig
+} = require('./config_factory');
 
 exports.suiteParseVersion = function(test) {
     test.expect(3);
@@ -85,8 +89,8 @@ exports.suiteCreateVsCodeConfig = function(test) {
 
     const testMock1 = {
         label: 'test 1',
-        version: '8.3.0',
-        expected: 'VS Code can now debug with this project with nodeJS "8.3.0"'
+        version: '6.11.1',
+        expected: 'VS Code can now debug this project with nodeJS version "6.11.1"'
     };
 
     testCreateVsCodeConfig(testMock1);
