@@ -51,8 +51,8 @@ still be saved.
 ```
 npm uninstall -g setup_vs_code_debug
 ```
-## Todos
-- add unit tests
+## Found a bug? Want a new feature?
+- please create an issue on the github page
 
 ## Author
 * **Mike Situ** - [Github Repos](https://github.com/shola)

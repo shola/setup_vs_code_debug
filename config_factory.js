@@ -62,10 +62,10 @@ function getRecentNodeVersion(customVersion) {
 function createVsCodeConfig(version) {
     const vscodeDir = '.vscode';
     const launchFilePath = [vscodeDir, 'launch.json'].join('/');
-    const getNodePath = `source ~/.nvm/nvm.sh\
-  \necho ${version} > .nvmrc\
-  \nnvm use > /dev/null\
-  \nnvm which ${version}`;
+    const getNodePath = `source $HOME/.nvm/nvm-exec\
+        \necho ${version} > .nvmrc\
+        \nnvm use > /dev/null\
+        \nnvm which ${version}`;
     const configPromise = new Promise((resolve, reject) => {
         exec(getNodePath, function(err, localNodePath, stderr) {
             if (err) {
